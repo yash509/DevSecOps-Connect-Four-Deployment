@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: connectfour-deployment
 spec:
-  replicas: 2  # Number of desired replicas
+  replicas: 3  # Number of desired replicas
   selector:
     matchLabels:
       app: connectfour
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: connectfour
-        image: rameshkumarverma/connectfour
+        image: yash5090/connectfour:latest
         ports:
         - containerPort: 80
