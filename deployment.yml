@@ -16,4 +16,4 @@ spec:
       - name: connectfour
         image: yash5090/connectfour:latest
         ports:
-        - containerPort: 80
+        - containerPort: 5000
